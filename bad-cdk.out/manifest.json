@@ -1,0 +1,512 @@
+{
+  "version": "9.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "LambdaStack1": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "LambdaStack1.template.json"
+      },
+      "metadata": {
+        "/LambdaStack1/lambda/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "lambdaServiceRole494E4CA6",
+            "trace": [
+              "new Role (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:327:18)",
+              "new Function (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:552:31)",
+              "new LambdaStack (C:\\SBP\\cdk-ag2-test\\lib\\cdk-ag2-test-stack.ts:38:19)",
+              "Object.<anonymous> (C:\\SBP\\cdk-ag2-test\\bin\\cdk-ag2-test.ts:7:22)",
+              "Module._compile (internal/modules/cjs/loader.js:1256:30)",
+              "Module.m._compile (C:\\SBP\\cdk-ag2-test\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1277:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\SBP\\cdk-ag2-test\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:1105:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:967:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\SBP\\cdk-ag2-test\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\SBP\\cdk-ag2-test\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1256:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1277:10)",
+              "Module.load (internal/modules/cjs/loader.js:1105:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:967:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/LambdaStack1/lambda/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "lambda8B5974B5",
+            "trace": [
+              "new Function (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:614:35)",
+              "new LambdaStack (C:\\SBP\\cdk-ag2-test\\lib\\cdk-ag2-test-stack.ts:38:19)",
+              "Object.<anonymous> (C:\\SBP\\cdk-ag2-test\\bin\\cdk-ag2-test.ts:7:22)",
+              "Module._compile (internal/modules/cjs/loader.js:1256:30)",
+              "Module.m._compile (C:\\SBP\\cdk-ag2-test\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1277:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\SBP\\cdk-ag2-test\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:1105:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:967:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\SBP\\cdk-ag2-test\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\SBP\\cdk-ag2-test\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1256:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1277:10)",
+              "Module.load (internal/modules/cjs/loader.js:1105:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:967:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/LambdaStack1/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.ts:51:24)",
+              "C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:140:5",
+              "visit (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:200:5)",
+              "visit (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:196:5)",
+              "injectMetadataResources (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:131:3)",
+              "Object.synthesize (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:18:3)",
+              "App.synth (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:188:23)",
+              "process.<anonymous> (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\app.ts:123:45)",
+              "Object.onceWrapper (events.js:421:26)",
+              "process.emit (events.js:314:20)",
+              "process.EventEmitter.emit (domain.js:486:12)",
+              "process.emit (C:\\SBP\\cdk-ag2-test\\node_modules\\source-map-support\\source-map-support.js:495:21)"
+            ]
+          }
+        ],
+        "/LambdaStack1/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.ts:60:27)",
+              "C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:140:5",
+              "visit (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:200:5)",
+              "visit (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:196:5)",
+              "injectMetadataResources (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:131:3)",
+              "Object.synthesize (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:18:3)",
+              "App.synth (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:188:23)",
+              "process.<anonymous> (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\app.ts:123:45)",
+              "Object.onceWrapper (events.js:421:26)",
+              "process.emit (events.js:314:20)",
+              "process.EventEmitter.emit (domain.js:486:12)",
+              "process.emit (C:\\SBP\\cdk-ag2-test\\node_modules\\source-map-support\\source-map-support.js:495:21)"
+            ]
+          }
+        ],
+        "/LambdaStack1/Exports/Output{\"Fn::GetAtt\":[\"lambda8B5974B5\",\"Arn\"]}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputFnGetAttlambda8B5974B5Arn3873DFB1",
+            "trace": [
+              "LambdaStack.exportValue (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:859:7)",
+              "createImportValue (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\private\\refs.ts:167:37)",
+              "resolveValue (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\private\\refs.ts:103:10)",
+              "Object.resolveReferences (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\private\\refs.ts:30:24)",
+              "Object.prepareApp (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\private\\prepare-app.ts:31:3)",
+              "Object.synthesize (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:24:3)",
+              "App.synth (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:188:23)",
+              "process.<anonymous> (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\app.ts:123:45)",
+              "Object.onceWrapper (events.js:421:26)",
+              "process.emit (events.js:314:20)",
+              "process.EventEmitter.emit (domain.js:486:12)",
+              "process.emit (C:\\SBP\\cdk-ag2-test\\node_modules\\source-map-support\\source-map-support.js:495:21)"
+            ]
+          }
+        ]
+      }
+    },
+    "LambdaStack2": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "LambdaStack2.template.json"
+      },
+      "metadata": {
+        "/LambdaStack2/lambda/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "lambdaServiceRole494E4CA6",
+            "trace": [
+              "new Role (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:327:18)",
+              "new Function (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:552:31)",
+              "new LambdaStack (C:\\SBP\\cdk-ag2-test\\lib\\cdk-ag2-test-stack.ts:38:19)",
+              "Object.<anonymous> (C:\\SBP\\cdk-ag2-test\\bin\\cdk-ag2-test.ts:8:22)",
+              "Module._compile (internal/modules/cjs/loader.js:1256:30)",
+              "Module.m._compile (C:\\SBP\\cdk-ag2-test\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1277:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\SBP\\cdk-ag2-test\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:1105:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:967:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\SBP\\cdk-ag2-test\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\SBP\\cdk-ag2-test\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1256:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1277:10)",
+              "Module.load (internal/modules/cjs/loader.js:1105:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:967:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/LambdaStack2/lambda/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "lambda8B5974B5",
+            "trace": [
+              "new Function (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:614:35)",
+              "new LambdaStack (C:\\SBP\\cdk-ag2-test\\lib\\cdk-ag2-test-stack.ts:38:19)",
+              "Object.<anonymous> (C:\\SBP\\cdk-ag2-test\\bin\\cdk-ag2-test.ts:8:22)",
+              "Module._compile (internal/modules/cjs/loader.js:1256:30)",
+              "Module.m._compile (C:\\SBP\\cdk-ag2-test\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1277:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\SBP\\cdk-ag2-test\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:1105:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:967:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\SBP\\cdk-ag2-test\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\SBP\\cdk-ag2-test\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1256:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1277:10)",
+              "Module.load (internal/modules/cjs/loader.js:1105:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:967:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/LambdaStack2/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.ts:51:24)",
+              "C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:140:5",
+              "visit (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:200:5)",
+              "visit (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:196:5)",
+              "injectMetadataResources (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:131:3)",
+              "Object.synthesize (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:18:3)",
+              "App.synth (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:188:23)",
+              "process.<anonymous> (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\app.ts:123:45)",
+              "Object.onceWrapper (events.js:421:26)",
+              "process.emit (events.js:314:20)",
+              "process.EventEmitter.emit (domain.js:486:12)",
+              "process.emit (C:\\SBP\\cdk-ag2-test\\node_modules\\source-map-support\\source-map-support.js:495:21)"
+            ]
+          }
+        ],
+        "/LambdaStack2/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.ts:60:27)",
+              "C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:140:5",
+              "visit (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:200:5)",
+              "visit (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:196:5)",
+              "injectMetadataResources (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:131:3)",
+              "Object.synthesize (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:18:3)",
+              "App.synth (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:188:23)",
+              "process.<anonymous> (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\app.ts:123:45)",
+              "Object.onceWrapper (events.js:421:26)",
+              "process.emit (events.js:314:20)",
+              "process.EventEmitter.emit (domain.js:486:12)",
+              "process.emit (C:\\SBP\\cdk-ag2-test\\node_modules\\source-map-support\\source-map-support.js:495:21)"
+            ]
+          }
+        ],
+        "/LambdaStack2/Exports/Output{\"Fn::GetAtt\":[\"lambda8B5974B5\",\"Arn\"]}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputFnGetAttlambda8B5974B5Arn3873DFB1",
+            "trace": [
+              "LambdaStack.exportValue (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:859:7)",
+              "createImportValue (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\private\\refs.ts:167:37)",
+              "resolveValue (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\private\\refs.ts:103:10)",
+              "Object.resolveReferences (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\private\\refs.ts:30:24)",
+              "Object.prepareApp (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\private\\prepare-app.ts:31:3)",
+              "Object.synthesize (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:24:3)",
+              "App.synth (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:188:23)",
+              "process.<anonymous> (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\app.ts:123:45)",
+              "Object.onceWrapper (events.js:421:26)",
+              "process.emit (events.js:314:20)",
+              "process.EventEmitter.emit (domain.js:486:12)",
+              "process.emit (C:\\SBP\\cdk-ag2-test\\node_modules\\source-map-support\\source-map-support.js:495:21)"
+            ]
+          }
+        ]
+      }
+    },
+    "CdkAg2TestStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "CdkAg2TestStack.template.json"
+      },
+      "dependencies": [
+        "LambdaStack1",
+        "LambdaStack2"
+      ],
+      "metadata": {
+        "/CdkAg2TestStack/api/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiC8550315",
+            "trace": [
+              "new HttpApi (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\aws-apigatewayv2\\lib\\http\\api.ts:394:22)",
+              "new CdkAg2TestStack (C:\\SBP\\cdk-ag2-test\\lib\\cdk-ag2-test-stack.ts:14:17)",
+              "Object.<anonymous> (C:\\SBP\\cdk-ag2-test\\bin\\cdk-ag2-test.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1256:30)",
+              "Module.m._compile (C:\\SBP\\cdk-ag2-test\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1277:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\SBP\\cdk-ag2-test\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:1105:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:967:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\SBP\\cdk-ag2-test\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\SBP\\cdk-ag2-test\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1256:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1277:10)",
+              "Module.load (internal/modules/cjs/loader.js:1105:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:967:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkAg2TestStack/api/DefaultStage/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiDefaultStage04B80AC9",
+            "trace": [
+              "new HttpStage (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\aws-apigatewayv2\\lib\\http\\stage.ts:92:5)",
+              "new HttpApi (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\aws-apigatewayv2\\lib\\http\\api.ts:407:27)",
+              "new CdkAg2TestStack (C:\\SBP\\cdk-ag2-test\\lib\\cdk-ag2-test-stack.ts:14:17)",
+              "Object.<anonymous> (C:\\SBP\\cdk-ag2-test\\bin\\cdk-ag2-test.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1256:30)",
+              "Module.m._compile (C:\\SBP\\cdk-ag2-test\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1277:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\SBP\\cdk-ag2-test\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:1105:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:967:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\SBP\\cdk-ag2-test\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\SBP\\cdk-ag2-test\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1256:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1277:10)",
+              "Module.load (internal/modules/cjs/loader.js:1105:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:967:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkAg2TestStack/api/ANY--lambda1/CdkAg2TestStackapiANYlambda1C28EC2A9-Permission": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiANYlambda1CdkAg2TestStackapiANYlambda1C28EC2A9PermissionE714D09F",
+            "trace": [
+              "Function.addPermission (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.ts:245:5)",
+              "LambdaProxyIntegration.bind (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\aws-apigatewayv2-integrations\\lib\\http\\lambda.ts:39:24)",
+              "new HttpRoute (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\aws-apigatewayv2\\lib\\http\\route.ts:138:38)",
+              "C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\aws-apigatewayv2\\lib\\http\\api.ts:460:36",
+              "Array.map (<anonymous>)",
+              "HttpApi.addRoutes (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\aws-apigatewayv2\\lib\\http\\api.ts:460:20)",
+              "new CdkAg2TestStack (C:\\SBP\\cdk-ag2-test\\lib\\cdk-ag2-test-stack.ts:16:9)",
+              "Object.<anonymous> (C:\\SBP\\cdk-ag2-test\\bin\\cdk-ag2-test.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1256:30)",
+              "Module.m._compile (C:\\SBP\\cdk-ag2-test\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1277:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\SBP\\cdk-ag2-test\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:1105:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:967:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\SBP\\cdk-ag2-test\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\SBP\\cdk-ag2-test\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1256:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1277:10)",
+              "Module.load (internal/modules/cjs/loader.js:1105:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:967:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkAg2TestStack/api/ANY--lambda1/HttpIntegration-6f095b8469365f72e33fa33d9711b140/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiANYlambda1HttpIntegration6f095b8469365f72e33fa33d9711b140D83F2355",
+            "trace": [
+              "new HttpIntegration (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\aws-apigatewayv2\\lib\\http\\integration.ts:136:19)",
+              "HttpApi._addIntegration (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\aws-apigatewayv2\\lib\\http\\api.ts:285:25)",
+              "new HttpRoute (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\aws-apigatewayv2\\lib\\http\\route.ts:143:39)",
+              "C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\aws-apigatewayv2\\lib\\http\\api.ts:460:36",
+              "Array.map (<anonymous>)",
+              "HttpApi.addRoutes (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\aws-apigatewayv2\\lib\\http\\api.ts:460:20)",
+              "new CdkAg2TestStack (C:\\SBP\\cdk-ag2-test\\lib\\cdk-ag2-test-stack.ts:16:9)",
+              "Object.<anonymous> (C:\\SBP\\cdk-ag2-test\\bin\\cdk-ag2-test.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1256:30)",
+              "Module.m._compile (C:\\SBP\\cdk-ag2-test\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1277:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\SBP\\cdk-ag2-test\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:1105:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:967:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\SBP\\cdk-ag2-test\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\SBP\\cdk-ag2-test\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1256:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1277:10)",
+              "Module.load (internal/modules/cjs/loader.js:1105:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:967:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkAg2TestStack/api/ANY--lambda1/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiANYlambda1E2A121CF",
+            "trace": [
+              "new HttpRoute (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\aws-apigatewayv2\\lib\\http\\route.ts:168:19)",
+              "C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\aws-apigatewayv2\\lib\\http\\api.ts:460:36",
+              "Array.map (<anonymous>)",
+              "HttpApi.addRoutes (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\aws-apigatewayv2\\lib\\http\\api.ts:460:20)",
+              "new CdkAg2TestStack (C:\\SBP\\cdk-ag2-test\\lib\\cdk-ag2-test-stack.ts:16:9)",
+              "Object.<anonymous> (C:\\SBP\\cdk-ag2-test\\bin\\cdk-ag2-test.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1256:30)",
+              "Module.m._compile (C:\\SBP\\cdk-ag2-test\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1277:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\SBP\\cdk-ag2-test\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:1105:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:967:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\SBP\\cdk-ag2-test\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\SBP\\cdk-ag2-test\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1256:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1277:10)",
+              "Module.load (internal/modules/cjs/loader.js:1105:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:967:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkAg2TestStack/api/ANY--lambda2/CdkAg2TestStackapiANYlambda22EC5C4DF-Permission": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiANYlambda2CdkAg2TestStackapiANYlambda22EC5C4DFPermissionA7140438",
+            "trace": [
+              "Function.addPermission (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.ts:245:5)",
+              "LambdaProxyIntegration.bind (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\aws-apigatewayv2-integrations\\lib\\http\\lambda.ts:39:24)",
+              "new HttpRoute (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\aws-apigatewayv2\\lib\\http\\route.ts:138:38)",
+              "C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\aws-apigatewayv2\\lib\\http\\api.ts:460:36",
+              "Array.map (<anonymous>)",
+              "HttpApi.addRoutes (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\aws-apigatewayv2\\lib\\http\\api.ts:460:20)",
+              "new CdkAg2TestStack (C:\\SBP\\cdk-ag2-test\\lib\\cdk-ag2-test-stack.ts:24:9)",
+              "Object.<anonymous> (C:\\SBP\\cdk-ag2-test\\bin\\cdk-ag2-test.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1256:30)",
+              "Module.m._compile (C:\\SBP\\cdk-ag2-test\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1277:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\SBP\\cdk-ag2-test\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:1105:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:967:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\SBP\\cdk-ag2-test\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\SBP\\cdk-ag2-test\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1256:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1277:10)",
+              "Module.load (internal/modules/cjs/loader.js:1105:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:967:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkAg2TestStack/api/ANY--lambda2/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiANYlambda2C2AB0698",
+            "trace": [
+              "new HttpRoute (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\aws-apigatewayv2\\lib\\http\\route.ts:168:19)",
+              "C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\aws-apigatewayv2\\lib\\http\\api.ts:460:36",
+              "Array.map (<anonymous>)",
+              "HttpApi.addRoutes (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\aws-apigatewayv2\\lib\\http\\api.ts:460:20)",
+              "new CdkAg2TestStack (C:\\SBP\\cdk-ag2-test\\lib\\cdk-ag2-test-stack.ts:24:9)",
+              "Object.<anonymous> (C:\\SBP\\cdk-ag2-test\\bin\\cdk-ag2-test.ts:9:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1256:30)",
+              "Module.m._compile (C:\\SBP\\cdk-ag2-test\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1277:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\SBP\\cdk-ag2-test\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:1105:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:967:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\SBP\\cdk-ag2-test\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\SBP\\cdk-ag2-test\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1256:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1277:10)",
+              "Module.load (internal/modules/cjs/loader.js:1105:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:967:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkAg2TestStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.ts:51:24)",
+              "C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:140:5",
+              "visit (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:200:5)",
+              "visit (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:196:5)",
+              "injectMetadataResources (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:131:3)",
+              "Object.synthesize (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:18:3)",
+              "App.synth (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:188:23)",
+              "process.<anonymous> (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\app.ts:123:45)",
+              "Object.onceWrapper (events.js:421:26)",
+              "process.emit (events.js:314:20)",
+              "process.EventEmitter.emit (domain.js:486:12)",
+              "process.emit (C:\\SBP\\cdk-ag2-test\\node_modules\\source-map-support\\source-map-support.js:495:21)"
+            ]
+          }
+        ],
+        "/CdkAg2TestStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.ts:60:27)",
+              "C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:140:5",
+              "visit (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:200:5)",
+              "visit (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:196:5)",
+              "injectMetadataResources (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:131:3)",
+              "Object.synthesize (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:18:3)",
+              "App.synth (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:188:23)",
+              "process.<anonymous> (C:\\SBP\\cdk-ag2-test\\node_modules\\@aws-cdk\\core\\lib\\app.ts:123:45)",
+              "Object.onceWrapper (events.js:421:26)",
+              "process.emit (events.js:314:20)",
+              "process.EventEmitter.emit (domain.js:486:12)",
+              "process.emit (C:\\SBP\\cdk-ag2-test\\node_modules\\source-map-support\\source-map-support.js:495:21)"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

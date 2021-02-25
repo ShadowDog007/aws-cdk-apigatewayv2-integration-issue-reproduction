@@ -1,0 +1,349 @@
+{
+  "Resources": {
+    "apiC8550315": {
+      "Type": "AWS::ApiGatewayV2::Api",
+      "Properties": {
+        "Name": "api",
+        "ProtocolType": "HTTP"
+      },
+      "Metadata": {
+        "aws:cdk:path": "CdkAg2TestStack/api/Resource"
+      }
+    },
+    "apiDefaultStage04B80AC9": {
+      "Type": "AWS::ApiGatewayV2::Stage",
+      "Properties": {
+        "ApiId": {
+          "Ref": "apiC8550315"
+        },
+        "StageName": "$default",
+        "AutoDeploy": true
+      },
+      "Metadata": {
+        "aws:cdk:path": "CdkAg2TestStack/api/DefaultStage/Resource"
+      }
+    },
+    "apiANYlambda1CdkAg2TestStackapiANYlambda1C28EC2A9PermissionE714D09F": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Fn::ImportValue": "LambdaStack1:ExportsOutputFnGetAttlambda8B5974B5Arn3873DFB1"
+        },
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition"
+              },
+              ":execute-api:",
+              {
+                "Ref": "AWS::Region"
+              },
+              ":",
+              {
+                "Ref": "AWS::AccountId"
+              },
+              ":",
+              {
+                "Ref": "apiC8550315"
+              },
+              "/*/*/lambda1"
+            ]
+          ]
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "CdkAg2TestStack/api/ANY--lambda1/CdkAg2TestStackapiANYlambda1C28EC2A9-Permission"
+      }
+    },
+    "apiANYlambda1HttpIntegration6f095b8469365f72e33fa33d9711b140D83F2355": {
+      "Type": "AWS::ApiGatewayV2::Integration",
+      "Properties": {
+        "ApiId": {
+          "Ref": "apiC8550315"
+        },
+        "IntegrationType": "AWS_PROXY",
+        "IntegrationUri": {
+          "Fn::ImportValue": "LambdaStack1:ExportsOutputFnGetAttlambda8B5974B5Arn3873DFB1"
+        },
+        "PayloadFormatVersion": "2.0"
+      },
+      "Metadata": {
+        "aws:cdk:path": "CdkAg2TestStack/api/ANY--lambda1/HttpIntegration-6f095b8469365f72e33fa33d9711b140/Resource"
+      }
+    },
+    "apiANYlambda1E2A121CF": {
+      "Type": "AWS::ApiGatewayV2::Route",
+      "Properties": {
+        "ApiId": {
+          "Ref": "apiC8550315"
+        },
+        "RouteKey": "ANY /lambda1",
+        "AuthorizationScopes": [],
+        "Target": {
+          "Fn::Join": [
+            "",
+            [
+              "integrations/",
+              {
+                "Ref": "apiANYlambda1HttpIntegration6f095b8469365f72e33fa33d9711b140D83F2355"
+              }
+            ]
+          ]
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "CdkAg2TestStack/api/ANY--lambda1/Resource"
+      }
+    },
+    "apiANYlambda2CdkAg2TestStackapiANYlambda22EC5C4DFPermissionA7140438": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Fn::ImportValue": "LambdaStack2:ExportsOutputFnGetAttlambda8B5974B5Arn3873DFB1"
+        },
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition"
+              },
+              ":execute-api:",
+              {
+                "Ref": "AWS::Region"
+              },
+              ":",
+              {
+                "Ref": "AWS::AccountId"
+              },
+              ":",
+              {
+                "Ref": "apiC8550315"
+              },
+              "/*/*/lambda2"
+            ]
+          ]
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "CdkAg2TestStack/api/ANY--lambda2/CdkAg2TestStackapiANYlambda22EC5C4DF-Permission"
+      }
+    },
+    "apiANYlambda2C2AB0698": {
+      "Type": "AWS::ApiGatewayV2::Route",
+      "Properties": {
+        "ApiId": {
+          "Ref": "apiC8550315"
+        },
+        "RouteKey": "ANY /lambda2",
+        "AuthorizationScopes": [],
+        "Target": {
+          "Fn::Join": [
+            "",
+            [
+              "integrations/",
+              {
+                "Ref": "apiANYlambda1HttpIntegration6f095b8469365f72e33fa33d9711b140D83F2355"
+              }
+            ]
+          ]
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "CdkAg2TestStack/api/ANY--lambda2/Resource"
+      }
+    },
+    "CDKMetadata": {
+      "Type": "AWS::CDK::Metadata",
+      "Properties": {
+        "Modules": "aws-cdk=1.90.1,@aws-cdk/assets=1.91.0,@aws-cdk/aws-apigatewayv2=1.91.0,@aws-cdk/aws-apigatewayv2-integrations=1.91.0,@aws-cdk/aws-applicationautoscaling=1.91.0,@aws-cdk/aws-autoscaling-common=1.91.0,@aws-cdk/aws-cloudwatch=1.91.0,@aws-cdk/aws-codeguruprofiler=1.91.0,@aws-cdk/aws-ec2=1.91.0,@aws-cdk/aws-ecr=1.91.0,@aws-cdk/aws-ecr-assets=1.91.0,@aws-cdk/aws-elasticloadbalancingv2=1.91.0,@aws-cdk/aws-events=1.91.0,@aws-cdk/aws-iam=1.91.0,@aws-cdk/aws-kms=1.91.0,@aws-cdk/aws-lambda=1.91.0,@aws-cdk/aws-logs=1.91.0,@aws-cdk/aws-s3=1.91.0,@aws-cdk/aws-s3-assets=1.91.0,@aws-cdk/aws-sqs=1.91.0,@aws-cdk/aws-ssm=1.91.0,@aws-cdk/cloud-assembly-schema=1.91.0,@aws-cdk/core=1.91.0,@aws-cdk/cx-api=1.91.0,@aws-cdk/region-info=1.91.0,jsii-runtime=node.js/v14.7.0"
+      },
+      "Metadata": {
+        "aws:cdk:path": "CdkAg2TestStack/CDKMetadata/Default"
+      },
+      "Condition": "CDKMetadataAvailable"
+    }
+  },
+  "Conditions": {
+    "CDKMetadataAvailable": {
+      "Fn::Or": [
+        {
+          "Fn::Or": [
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "ap-east-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "ap-northeast-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "ap-northeast-2"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "ap-south-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "ap-southeast-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "ap-southeast-2"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "ca-central-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "cn-north-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "cn-northwest-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "eu-central-1"
+              ]
+            }
+          ]
+        },
+        {
+          "Fn::Or": [
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "eu-north-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "eu-west-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "eu-west-2"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "eu-west-3"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "me-south-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "sa-east-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "us-east-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "us-east-2"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "us-west-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "us-west-2"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
